@@ -1,0 +1,101 @@
+.module-5 .section-main {
+    width: 55%;
+    margin-right: 40px;
+}
+.module-5 .section-sub {
+    flex: 1;
+}
+.post--overlay-large .post__text.mh-950 {
+    min-height: 950px;
+}
+.post--horizontal-hover.style-2 {
+    padding: 20px;
+    padding-left: 0;
+}
+.post--horizontal-hover.style-2::after {
+    left: 40px;
+}
+.post--horizontal-hover.style-2 .post__cat {
+    margin-bottom: 10px;
+    display: block;
+    width: fit-content;
+    transition: all 0.3s;
+}
+.post--horizontal-hover.style-2 .post__thumb {
+    width: 250px;
+    height: 250px;
+}
+@media (min-width:768px) {
+    .post--horizontal-hover.style-2:hover .post__cat {
+        background-color: var(--color-white);
+        color: var(--color-title);
+    }
+}
+@media (max-width:1680px) {
+    .post--horizontal-hover.style-2 .post__thumb {
+        width: 180px;
+        height: 180px;
+    }
+    .post--horizontal-hover.style-2::after {
+        left: 20px;
+    }
+    .post--overlay-large .post__text.mh-950 {
+        min-height: 740px;
+    }
+}
+@media (max-width:1366px) {
+    .post--horizontal-hover.style-2 {
+        padding: 15px;
+        padding-left: 0;
+    }
+    .post--horizontal-hover.style-2 .post__thumb {
+        width: 130px;
+        height: 130px;
+    }
+    .post--horizontal-hover.style-2 .post__cat {
+        display: none;
+    }
+    .post--overlay-large .post__text.mh-950 {
+        min-height: 560px;
+    }
+}
+@media (max-width:1199px) {
+    .module-5 .section-main {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    .module-5 .posts-list {
+        margin: -10px;
+    }
+    .module-5 .posts-list>* {
+        padding: 10px;
+    }
+    .post--horizontal-hover.style-2 .post__thumb {
+        width: 100px;
+        height: 100px;
+    }
+    .post--horizontal-hover.style-2::after {
+        left: 15px;
+    }
+}
+@media (max-width:680px) {
+    .module-5 .posts-list>* {
+        width: 100%;
+    }
+}
+@media (max-width:575px) {
+    .post--overlay-large .post__text.mh-950 {
+        min-height: 400px;
+    }
+}
+@media (max-width:480px) {
+    .post--overlay-large .post__text.mh-950 {
+        min-height: 350px;
+    }
+}
+@media (max-width:380px) {
+    .post--overlay-large .post__text.mh-950 {
+        min-height: 300px;
+    }
+}

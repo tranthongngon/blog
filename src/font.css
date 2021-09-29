@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+.top-bar-left .list-top li > a,
+.top-bar-right .user .user-name,
+.top-bar-right .search input,
+.main-menu > li > a,
+.header-mobile input,
+.header-mobile .form-search button,
+.form-submit label,
+.form-submit input,
+.form-submit textarea,
+.form-submit input::placeholder,
+.form-submit textarea::placeholder,
+.form-submit button {
+    font-family: 'Roboto', sans-serif;
+}
+a.post__cat,
+.post__title a,
+.post__excerpt,
+.author-style-2 .author-name,
+.post__meta time,
+.heading-style-1 .heading-title,
+.heading-style-1 .list-categories li {
+    font-family: 'Montserrat', sans-serif;
+}
+.post__title a{
+    color: var(--color-secondary);
+}
+.post__excerpt,
+.post__meta time {
+    color: rgba(23, 23, 23, 0.6);
+}
