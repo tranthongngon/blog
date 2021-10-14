@@ -311,6 +311,10 @@
    .header-left.active {
        left: 0;
    }
+   .header-mobile_inner {
+       padding-left: 15px;
+       padding-right: 15px;
+   }
 }
 
 /* mobile */

@@ -1,0 +1,15 @@
+.site-content .loading {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:480px) {
+    .site-content .loading {
+        flex-direction: column;
+    }
+    .site-content .loading p {
+        padding-left: 0;
+        margin-left: -30px;
+    }
+}

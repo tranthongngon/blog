@@ -36,8 +36,13 @@ function HeaderFixed({hanlerClickShowOffCanvas, isShowOffCanvas}) {
                             </Link>
                         </li>
                         <li className="menu-item">
-                            <Link to="/single">
+                            <Link to="/single/44">
                                 Single
+                            </Link>
+                        </li>
+                        <li className="menu-item">
+                            <Link to="/all-blog-posts">
+                                All Posts
                             </Link>
                         </li>
                         <li className="menu-item has-children-menu" onClick={hanlerShowMenu}>

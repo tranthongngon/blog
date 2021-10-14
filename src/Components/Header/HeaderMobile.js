@@ -11,7 +11,6 @@ function HeaderMobile({ hanlerClickShowOffCanvas }) {
     }
     return (
         <div className="hidden-md header-mobile">
-            <div className="container">
                 <div className="header-mobile_inner">
                     <div className="site-logo">
                         <a href="viric">
@@ -33,7 +32,6 @@ function HeaderMobile({ hanlerClickShowOffCanvas }) {
                         <button type="submit">Search</button>
                     </div>
                 </form>
-            </div>
         </div>
     );
 }

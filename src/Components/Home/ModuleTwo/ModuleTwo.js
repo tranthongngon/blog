@@ -1,16 +1,15 @@
-import React,{useContext, useState} from 'react';
-import {DataContext} from "../DataPosts";
+import React,{useState} from 'react';
 import {Link} from "react-router-dom";
 import './module-two.css';
 
-function ModuleTwo() {
+function ModuleTwo({dataPosts}) {
     const categories = ["Beauty","Travel","Animal","Nature","Beach"];
     const [dataCategory, setdataCategory] = useState(categories[0])
     const hanlerClick = (e) => {
         e.preventDefault();
         setdataCategory(e.target.innerText);    
     }
-    const data = useContext(DataContext);
+    const data = dataPosts;
     return (
         <div className="module module-2">
             <div className="module-heading flex-box heading-style-1">
@@ -32,7 +31,7 @@ function ModuleTwo() {
             <div className="module__inner">
                 <div className="posts-list flex-box flex-box-4i flex-space-20">
                     {
-                         data.posts.filter(post => post.category === dataCategory).slice(0,8).map((post, index) => (
+                         data.filter(post => post.category === dataCategory).slice(0,8).map((post, index) => (
                             <div className="list-item" key={index}>
                                 <article className="post post--vertical post--vertical-category">
                                     <div className="post__thumb object-fit">

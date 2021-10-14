@@ -96,7 +96,7 @@
     }
 }
 @media (max-width:1199px) {
-    .posts-list>* {
+    .module-3 .posts-list>* {
         width: 50%;
     }
 }
@@ -113,7 +113,7 @@
     }
 }
 @media (max-width:575px) {
-    .posts-list>* {
+    .module-3 .posts-list>* {
         width: 100%;
     }
     .post--overlay-hover .post__text {

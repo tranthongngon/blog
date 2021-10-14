@@ -13,6 +13,7 @@ import Fashion from "./Components/Category/Fashion";
 import Travel from "./Components/Category/Travel";
 import Lifestyle from "./Components/Category/Lifestyle";
 import Editor from "./Components/Editor/Editor";
+import AllBlogPosts from "./Components/AllBlogPosts/AllBlogPosts";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" exact component={Home}/>
           <Route path="/featured" component= {Featured}/>
           <Route path="/single/:id" component={Single} />
+          <Route path="/all-blog-posts" component={AllBlogPosts}/>
           <Route path="/category" exact component= {Category}/>
           <Route path="/category/beauty" component={Beauty}/>
           <Route path="/category/fashion" component={Fashion}/>

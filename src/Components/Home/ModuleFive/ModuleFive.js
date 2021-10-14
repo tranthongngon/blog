@@ -1,11 +1,10 @@
-import React,{useContext} from 'react';
-import {DataContext} from "../DataPosts";
+import React from 'react';
 import {Link} from "react-router-dom";
 import './module-five.css';
 import HTMLReactParser from 'html-react-parser';
 
-function ModuleFive() {
-    const data = useContext(DataContext);
+function ModuleFive({dataPosts}) {
+    const data = dataPosts;
     return (
         <div className="module module-5">
             <div className="module-heading heading-style-1">
@@ -16,7 +15,7 @@ function ModuleFive() {
             <div className="module__inner flex-box">
                 <div className="section-main">
                     {
-                       data.posts.filter(post => post.id === "5").map((post, index) =>(
+                       data.filter(post => post.id === "5").map((post, index) =>(
                            <article className="post post--overlay post--overlay-large" key={index}>
                                 <div className="post__thumb object-fit">
                                     <Link to={`/single/${post.id}`}>
@@ -55,7 +54,7 @@ function ModuleFive() {
                 <div className="section-sub">
                     <div className="posts-list flex-box flex-box-1i flex-space-40">
                         {
-                            data.posts.filter(post => post.category === "Nature").slice(0,3).map((post,index) => (
+                            data.filter(post => post.category === "Nature").slice(0,3).map((post,index) => (
                                 <div className="list-item" key={index}>
                                     <article className="post post--horizontal post--horizontal-hover style-2">
                                         <div className="post__thumb object-fit">

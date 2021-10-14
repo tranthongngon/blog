@@ -54,7 +54,7 @@
 }
 .post__meta time {
     font-size: 14px;
-    font-family: 400;
+    font-weight: 400;
     text-transform: capitalize;
     line-height: 1;
 }

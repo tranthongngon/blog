@@ -1,17 +1,16 @@
-import React,{useContext} from 'react';
-import {DataContext} from "../DataPosts";
+import React from 'react';
 import {Link} from "react-router-dom";
 import './module-four.css'
 
 
-function ModuleFour() {
-    const data = useContext(DataContext);
+function ModuleFour({dataPosts}) {
+    const data = dataPosts;
     return (
         <div className="module module-4">
             <div className="module__inner">
                 <div className="posts-list flex-box flex-box-3i flex-space-40">
                     {
-                        data.posts.filter(post => post.category === "Animal").slice(0,6).map((post,index) => (
+                        data.filter(post => post.category === "Animal").slice(0,6).map((post,index) => (
                             <div className="list-item" key={index}>
                                 <article className="post post--horizontal post--horizontal-hover">
                                     <div className="post__thumb object-fit">

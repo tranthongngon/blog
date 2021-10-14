@@ -13,7 +13,14 @@
 .form-submit textarea,
 .form-submit input::placeholder,
 .form-submit textarea::placeholder,
-.form-submit button {
+.form-submit button,
+.pagination-list .number-item a,
+.post__readmore-style-2 a,
+.entry-author .entry-name a,
+.single-header a.entry-cat,
+.entry-author .entry-name a,
+.post-single p,
+.author-box .author-box-text .author-bio {
     font-family: 'Roboto', sans-serif;
 }
 a.post__cat,
@@ -22,7 +29,12 @@ a.post__cat,
 .author-style-2 .author-name,
 .post__meta time,
 .heading-style-1 .heading-title,
-.heading-style-1 .list-categories li {
+.heading-style-1 .list-categories li,
+.heading__inside-style-1 .heading__inside-title,
+.single-header .entry-title,
+.post-single > h3,
+.post-single blockquote cite,
+.author-box .author-box-text .author-box-name {
     font-family: 'Montserrat', sans-serif;
 }
 .post__title a{

@@ -1,21 +1,20 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { DataContext } from '../DataPosts';
 import { ReactComponent as Next } from '../Icon/next.svg';
 import { ReactComponent as Square } from '../Icon/square.svg';
 import './module-one.css';
-import HTMLReactParser from 'html-react-parser'
+import HTMLReactParser from 'html-react-parser';
 import { memo } from 'react';
 
-function ModuleOne(props) {
+function ModuleOne({dataPosts}) {
    
-    const data = useContext(DataContext);
+    const data = dataPosts;
     return (
         <div className="module module-1"> 
             <div className="module__inner flex-box">
                 <div className="section-main">
                     {
-                       data.posts.filter(post => post.id === "1").map((post, index) =>(
+                       data.filter(post => post.id === "1").map((post, index) =>(
                            <article className="post post--overlay post--overlay-large" key={index}>
                                 <div className="post__thumb object-fit">
                                     <Link to={`/single/${post.id}`}>
@@ -54,7 +53,7 @@ function ModuleOne(props) {
                 <div className="section-sub">
                     <div className="posts-list flex-box flex-box-2i flex-space-20"> 
                     {
-                        data.posts.filter(post => 10 <= parseInt(post.id) && parseInt(post.id) <= 11).map((post, index) => (
+                        data.filter(post => 10 <= parseInt(post.id) && parseInt(post.id) <= 11).map((post, index) => (
                             <div className="list-item" key={index}>
                                 <article className="post post--vertical post--vertical-medium">
                                     <div className="post__thumb object-fit">
