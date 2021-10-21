@@ -37,13 +37,13 @@ function FooterTopRight() {
                     Gallery
                 </h3>
                 <ul className="list-img flex-box">
-                    {/* {
+                    {
                         listImg.map((img,index)=>(
                             <li key={index}>
                                 <img src={img.urls.full} alt={img.alt_description}/>
                             </li>
                         ))
-                    } */}
+                    }
                 </ul>
             </div>
         </div>
