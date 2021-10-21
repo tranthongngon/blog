@@ -10,13 +10,13 @@ function AllBlogPosts() {
     const [posts, setposts] = useState([]);
     const [loading, setloading] = useState(false);
     const [currentPage,setcurrentPage] = useState(1);
-    const [postPerPage] = useState(12)
+    const [postPerPage] = useState(12);
     useEffect(() => {
         const fetchPost = async ()=>{
             setloading(true)
             PostController.getAllPost()
             .then(posts => {
-                setposts(posts);
+                setposts(posts.filter(post => post.id !== undefined));
                 setloading(false);
             }).catch(error => {
                 console.log(error);

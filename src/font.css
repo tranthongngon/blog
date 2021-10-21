@@ -20,7 +20,10 @@
 .single-header a.entry-cat,
 .entry-author .entry-name a,
 .post-single p,
-.author-box .author-box-text .author-bio {
+.author-box .author-box-text .author-bio,
+.site-footer-left .text-footer p ,
+.not-found p,
+.search-page .site-content .search-for{
     font-family: 'Roboto', sans-serif;
 }
 a.post__cat,
@@ -32,13 +35,15 @@ a.post__cat,
 .heading-style-1 .list-categories li,
 .heading__inside-style-1 .heading__inside-title,
 .single-header .entry-title,
-.post-single > h3,
+.post-single .single-body > h3,
 .post-single blockquote cite,
-.author-box .author-box-text .author-box-name {
+.author-box .author-box-text .author-box-name,
+.site-footer-right .title-footer {
     font-family: 'Montserrat', sans-serif;
 }
 .post__title a{
     color: var(--color-secondary);
+    text-transform: capitalize;
 }
 .post__excerpt,
 .post__meta time {

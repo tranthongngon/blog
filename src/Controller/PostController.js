@@ -1,7 +1,7 @@
 import db from "../firebase";
 import { Post, PostConverter } from "../Model/Post";
 
-const POST_LIMIT = 50;
+const POST_LIMIT = 100;
 
 class PostController {
     constructor() {

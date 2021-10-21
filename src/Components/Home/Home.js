@@ -25,7 +25,7 @@ function Home() {
             setloading(true)
             PostController.getAllPost()
             .then(posts => {
-                setposts(posts);
+                setposts(posts.filter(post => post.id !== undefined));
                 setloading(false);
             }).catch(error => {
                 console.log(error);
@@ -34,9 +34,8 @@ function Home() {
         fetchPost();
       }, []);
 
-      const dataChildren = posts.slice(0,5);
-      document.title = "Viric"
-
+      const dataChildren = posts.slice(10,15);
+      document.title = "Viric";
     return (
         <div>
             {loading ? (

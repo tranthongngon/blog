@@ -11,7 +11,7 @@ const Editor = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         setProcessing(true);
-        for(let i = 51 ; i <= 53; i++) {
+        for(let i = 1 ; i <= 50; i++) {
             PostController.createPost(`${data.authorImg}`, `${data.authorName}`,`${data.authorBio}`,`${data.content}`, `${data.title}`, `${i}`, `${data.category}`, [...data.tags.split(",")], `${data.imgUrl}`)
         .then(r => {
             setProcessing(false);

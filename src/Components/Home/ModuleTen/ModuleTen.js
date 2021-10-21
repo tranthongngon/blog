@@ -16,7 +16,7 @@ function ModuleTen({dataPosts}) {
             <div className="module__inner flex-box">
                 <div className="section-main">
                     {
-                        data.filter(post => post.id === "37").map((post, index) => (
+                        data.filter(post => post.id === "39").map((post, index) => (
                             <article className="post post--vertical post--vertical-special" key={index}>
                                 <div className="post__thumb object-fit">
                                     <Link to={`/single/${post.id}`}>

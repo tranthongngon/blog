@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import logo from "../image/logo.svg";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import {ReactComponent as Close} from '../icon/close.svg'
 import {ReactComponent as Face} from '../icon/face.svg'
 import {ReactComponent as Instagram} from '../icon/instagram.svg'
@@ -13,7 +13,7 @@ function HeaderFixed({hanlerClickShowOffCanvas, isShowOffCanvas}) {
         e.preventDefault();
         setisShow(!isShow)
     }
-    const categorys= ['fashion', 'travel', 'lifestyle', 'beauty']
+    const categorys= ['Beauty', 'Travel', 'Beach', 'Animal','Nature']
     return (
         <div className={isShowOffCanvas ? "header-left active": "header-left"}>
             <div className="header-left__inner">
@@ -25,40 +25,40 @@ function HeaderFixed({hanlerClickShowOffCanvas, isShowOffCanvas}) {
                 </div>
                 <div className="header-left__middle">
                     <ul className="main-menu">
-                        <li className="menu-item active">
-                            <Link to="/">
+                        <li className="menu-item">
+                            <NavLink to="/" activeClassName="active">
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="menu-item">
-                            <Link to="/featured">
+                            <NavLink to="/featured" activeClassName="active">
                                 Featured
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="menu-item">
-                            <Link to="/single/44">
+                            <NavLink to="/single/44" activeClassName="active">
                                 Single
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="menu-item">
-                            <Link to="/all-blog-posts">
+                            <NavLink to="/all-blog-posts" activeClassName="active">
                                 All Posts
-                            </Link>
+                            </NavLink>
                         </li>
-                        <li className="menu-item has-children-menu" onClick={hanlerShowMenu}>
-                            <Link to="/category">
+                        <li className="menu-item has-children-menu">
+                            <NavLink to="/category" onClick={hanlerShowMenu}>
                                 Category
-                            </Link>
+                            </NavLink>
                             <ul className={isShow ? 'sub-menu active':'sub-menu'}>
                                 {categorys.map((category, index) => <li key={index}>
-                                    <Link to={`/category/${category}`}> {category} </Link>
+                                    <NavLink to={`/category/${category}`} activeClassName="active"> {category} </NavLink>
                                 </li>)}
                             </ul>
                         </li>
                         <li className="menu-item">
-                            <Link to="/contact">
+                            <NavLink to="/contact" activeClassName="active">
                                 Contact
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
