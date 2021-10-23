@@ -11,7 +11,6 @@ function FooterTopRight() {
         axios.get(`https://api.unsplash.com/photos/random?query=${typeImg}&count=8&client_id=${key}`)
         .then(res =>{
             setlistImg(res.data);
-            console.log(res.data);
         }).catch(error =>{
             console.log(error);
         })

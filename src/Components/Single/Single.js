@@ -32,8 +32,7 @@ function Single({ match }) {
                     document.title = `Viric-` + posts.filter(post => post.id === `${match.params.id}`).map(post => (
                         post.title
                     ));
-                    setrelatedPost(posts.filter(post => post.category === `${posts.filter(post => post.id === `${match.params.id}`).map(p=>(p.category))[0]}`))
-                    console.log(posts.filter(post => post.category === `${posts.filter(post => post.id === `${match.params.id}`).map(p=>(p.category))[0]}`));
+                    setrelatedPost(posts.filter(post => post.category === `${posts.filter(post => post.id === `${match.params.id}`).map(p=>(p.category))[0]}`));
                     setloading(false);
                 }).catch(error => {
                     console.log(error);
