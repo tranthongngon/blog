@@ -1,6 +1,7 @@
 # example netlify.toml
 [build]
   command = "npm install axios npm run build"
+  build = "build"
   functions = "netlify/functions"
   publish = "build"
 
