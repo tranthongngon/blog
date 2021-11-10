@@ -68,7 +68,7 @@ function Single({ match }) {
                                     
                                     <div className="comment-area">
                                         <FacebookProvider appId="366012431934183">
-                                            <Comments href="http://localhost:3000/" />
+                                            <Comments href={window.location.href} />
                                         </FacebookProvider>
                                     </div>
 
