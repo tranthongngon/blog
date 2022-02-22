@@ -4,7 +4,6 @@ import PostController from '../../Controller/PostController';
 import '../Editor/editor.css';
 import '../AllBlogPosts/loading.css';
 import './single.css';
-import { FacebookProvider, Comments } from 'react-facebook';
 import Content from './Content';
 import HeadSingle from './HeadSingle';
 import FooterSingle from './FooterSingle';
@@ -65,12 +64,6 @@ function Single({ match }) {
                                     <Author singlePost={post} />
 
                                     <NavigationPosts prevPost={prevPost} nextPost={nextPost} />
-                                    
-                                    <div className="comment-area">
-                                        <FacebookProvider appId="366012431934183">
-                                            <Comments href={window.location.href} />
-                                        </FacebookProvider>
-                                    </div>
 
                                 </div>
                             </article>

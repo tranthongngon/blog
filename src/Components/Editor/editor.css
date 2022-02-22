@@ -1,37 +1,60 @@
-
 .add-data {
     width: 100%;
     height: 100%;
     min-height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 60px 100px;
-    position: relative; 
+    position: relative;
 }
+
 .form-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 900px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
+
 .form-submit form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
     margin: -10px;
 }
+
 .form-submit form>* {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 10px;
 }
+
 .form-submit form .content,
 .form-submit form .img-url,
 .form-submit form .submit-data {
     width: 100%;
 }
+
 .form-submit label {
     font-size: 16px;
     font-weight: 500;
@@ -40,6 +63,7 @@
     margin-bottom: 10px;
     text-transform: capitalize;
 }
+
 .form-submit input,
 .form-submit textarea {
     padding: 12px 15px;
@@ -51,17 +75,53 @@
     background-color: transparent;
     border-radius: 8px;
 }
+
+.form-submit input::-webkit-input-placeholder,
+.form-submit textarea::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-title);
+    text-transform: capitalize;
+}
+
+.form-submit input::-moz-placeholder,
+.form-submit textarea::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-title);
+    text-transform: capitalize;
+}
+
+.form-submit input:-ms-input-placeholder,
+.form-submit textarea:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-title);
+    text-transform: capitalize;
+}
+
+.form-submit input::-ms-input-placeholder,
+.form-submit textarea::-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-title);
+    text-transform: capitalize;
+}
+
 .form-submit input::placeholder,
 .form-submit textarea::placeholder {
     font-size: 14px;
     font-weight: 400;
-    color: var(--color-title); 
+    color: var(--color-title);
     text-transform: capitalize;
 }
+
 .form-submit button {
     padding: 20px 50px;
     border: 1px solid var(--color-primary);
     background-color: var(--color-primary);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 15px;
     font-weight: 500;
@@ -71,10 +131,16 @@
     cursor: pointer;
     border-radius: 8px;
 }
+
 .form-submit form .submit-data {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
+
 .loading p {
     font-size: 20px;
     font-weight: 600;
@@ -83,15 +149,18 @@
     padding-left: 25px;
     margin-top: -20px;
 }
-@media (max-width:1199px) {
+
+@media (max-width: 1199px) {
     .add-data {
         padding: 60px 15px;
     }
 }
-@media (max-width:575px) {
+
+@media (max-width: 575px) {
     .form-submit form>* {
         width: 100%;
     }
+
     .form-submit button {
         padding: 15px 30px;
     }

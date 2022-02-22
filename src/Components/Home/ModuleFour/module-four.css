@@ -2,21 +2,29 @@
     border-radius: 5px;
     padding: 15px;
     padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
+
 .post--horizontal-hover::after {
     position: absolute;
     content: "";
     top: 0;
     bottom: 0;
-    left: 15px;;
+    left: 15px;
     right: 0;
     background-color: var(--color-white);
     z-index: 0;
     border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 .post--horizontal-hover .post__thumb {
     width: 120px;
     height: 120px;
@@ -25,51 +33,67 @@
     margin-right: 20px;
     z-index: 1;
 }
+
 .post--horizontal-hover .post__text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     z-index: 1;
 }
+
 .post--horizontal-hover .post__title {
     margin-bottom: 15px;
 }
+
 .post--horizontal-hover .post__title a,
 .post--horizontal-hover .post__meta time {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-@media (min-width:768px) {
+
+@media (min-width: 768px) {
     .post--horizontal-hover:hover::after {
         background-color: var(--color-primary);
     }
+
     .post--horizontal-hover:hover .post__title a {
         color: var(--color-white);
     }
+
     .post--horizontal-hover:hover .post__meta time {
         color: rgba(255, 255, 255, 0.6);
     }
 }
-@media (max-width:1680px) {
+
+@media (max-width: 1680px) {
     .module-4 .posts-list {
         margin: -10px;
     }
+
     .module-4 .posts-list>* {
         padding: 10px;
     }
 }
-@media (max-width:1440px) {
+
+@media (max-width: 1440px) {
     .module-4 .posts-list>* {
         width: 50%;
     }
 }
-@media (max-width:1199px) {
+
+@media (max-width: 1199px) {
     .post--horizontal-hover .post__thumb {
         width: 100px;
         height: 100px;
     }
+
     .post--horizontal-hover .post__title {
-        margin-bottom:  10px;
+        margin-bottom: 10px;
     }
 }
-@media (max-width:680px) {
+
+@media (max-width: 680px) {
     .module-4 .posts-list>* {
         width: 100%;
     }

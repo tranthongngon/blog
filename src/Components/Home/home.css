@@ -5,29 +5,40 @@
     color: var(--color-white);
     border-radius: 5px;
 }
+
 .post__cat {
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
-} 
+}
+
 .post__cat-position {
     position: absolute;
     top: 40px;
     left: 40px;
     z-index: 1;
 }
+
 .author-style-1 {
     position: absolute;
     top: -25px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
 .author-style-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
+
 .author-style-3 .author-avatar,
-.author-style-1 .author-avatar{
+.author-style-1 .author-avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -35,33 +46,49 @@
     display: block;
     overflow: hidden;
 }
+
 .author-style-1 .author-avatar a,
 .author-style-1 .author-avatar img,
 .author-style-3 .author-avatar a,
-.author-style-3 .author-avatar img{
+.author-style-3 .author-avatar img {
+    -o-object-fit: cover;
     object-fit: cover;
     display: block;
     width: 100%;
     height: 100%;
 }
+
 .author-style-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
+
 .author-style-2 svg {
     margin-right: 10px;
 }
+
 .author-style-2 .author-name {
     color: rgba(23, 23, 23, 0.6);
     text-transform: capitalize;
     line-height: 1;
 }
+
 .post__readmore-style-1 a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border: 1px solid var(--color-border);
     background-color: var(--color-white);
@@ -72,6 +99,7 @@
         margin-bottom: 135px;
     }
 }
+
 time,
 .post__readmore-style-2 a {
     line-height: 1;
